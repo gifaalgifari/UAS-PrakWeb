@@ -12,13 +12,13 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const contact = await Contact.find();
-  return NextResponse.json({ contact });
+  const Mahasiswa = await dataMhs.find();
+  return NextResponse.json({ Mahasiswa });
 }
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectMongoDB();
-  await Contact.findByIdAndDelete(id);
-  return NextResponse.json({ message: "Contact deleted" }, { status: 200 });
+  await dataMhs.findByIdAndDelete(id);
+  return NextResponse.json({ message: "mahasiswa deleted" }, { status: 200 });
 }

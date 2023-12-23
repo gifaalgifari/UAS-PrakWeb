@@ -21,11 +21,11 @@ const getMahasiswa = async () => {
 };
 
 export default async function MahasiswaList() {
-  const { contact } = await getMahasiswa();
+  const { Mahasiswa } = await getMahasiswa();
 
   return (
     <>
-      {contact.map((e) => (
+      {Mahasiswa.map((e) => (
         <div key={e._id} className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-center">
           <div>
             <div className=" flex gap-3 mb-4">
