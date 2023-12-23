@@ -2,7 +2,7 @@ import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 
-const getContact = async () => {
+const getMahasiswa = async () => {
   const apiUrl = process.env.API_URL;
 
   try {
@@ -20,8 +20,8 @@ const getContact = async () => {
   }
 };
 
-export default async function ContactList() {
-  const { contact } = await getContact();
+export default async function MahasiswaList() {
+  const { contact } = await getMahasiswa();
 
   return (
     <>

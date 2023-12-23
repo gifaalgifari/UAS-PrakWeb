@@ -1,6 +1,7 @@
-import ContactList from "@/components/MahasiswaList";
+import MahasiswaList from "@/components/MahasiswaList";
+
 
 export default function Home() {
-  // return <ContactList />;
-  return <div>Hello</div>
+  return <MahasiswaList />;
+  // return <div>Hello</div>
 }
